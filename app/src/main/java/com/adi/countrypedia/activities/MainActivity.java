@@ -96,7 +96,6 @@ public class MainActivity extends AppCompatActivity {
         if (item.getItemId() == R.id.refresh){
             if (Utils.isOnline(this)) {
                 refresh();
-                Log.d(TAG, "onOptionsItemSelected: online");
             }else {
                 Log.d(TAG, "onOptionsItemSelected: ");
                 updateError("Couldn't connect! please check your internet connection", R.drawable.ic_no_network, View.VISIBLE);
