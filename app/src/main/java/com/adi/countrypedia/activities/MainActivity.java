@@ -95,11 +95,10 @@ public class MainActivity extends AppCompatActivity {
         }
         if (item.getItemId() == R.id.refresh){
             if (Utils.isOnline(this)) {
-                if (countryList.size() == 0)
-                    refresh();
+                refresh();
             }else {
-                Log.d(TAG, "onOptionsItemSelected: ");
-                updateError("Couldn't connect! please check your internet connection", R.drawable.ic_no_network, View.VISIBLE);
+                if (countryList.size() == 0)
+                    updateError("Couldn't connect! please check your internet connection", R.drawable.ic_no_network, View.VISIBLE);
             }
         }
         return true;
