@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Country Pedia</string>
+    <string name="flag_image">flag_image</string>
+    <string name="capital">Capital</string>
+    <string name="languages">Languages</string>
+    <string name="borders">Borders</string>
+    <string name="region_continent">Region/Continent</string>
+    <string name="sub_region">Sub-region</string>
+    <string name="population">Population</string>
+    <string name="search">search</string>
+    <string name="delete_all">Delete all</string>
+    <string name="no_internet">no_internet</string>
+    <string name="refresh">refresh</string>
+</resources>
