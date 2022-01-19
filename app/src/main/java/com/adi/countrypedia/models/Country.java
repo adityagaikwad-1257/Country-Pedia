@@ -12,30 +12,22 @@ public class Country {
 
     @NonNull
     @PrimaryKey
-    private final CountryName name;
+    private CountryName name;
 
-    private final ArrayList<String> capital;
-    private final HashMap<String, String> flags;
-    private final String region;
-    private final String subregion;
-    private final int population;
-    private final ArrayList<String> borders;
-    private final HashMap<String, String> languages;
-
-    public Country(CountryName name, ArrayList<String> capital, HashMap<String, String> flags, String region,
-                   String subregion, int population, ArrayList<String> borders, HashMap<String, String> languages) {
-        this.name = name;
-        this.capital = capital;
-        this.flags = flags;
-        this.region = region;
-        this.subregion = subregion;
-        this.population = population;
-        this.borders = borders;
-        this.languages = languages;
-    }
+    private ArrayList<String> capital;
+    private HashMap<String, String> flags;
+    private String region;
+    private String subregion;
+    private int population;
+    private ArrayList<String> borders;
+    private HashMap<String, String> languages;
 
     public CountryName getName() {
         return name; }
+
+    public void setName(@NonNull CountryName name) {
+        this.name = name;
+    }
 
     public ArrayList<String> getCapital() {
         return capital;
