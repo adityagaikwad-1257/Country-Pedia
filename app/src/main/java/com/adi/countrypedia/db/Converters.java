@@ -13,7 +13,7 @@ import java.util.HashMap;
 public class Converters {
 
     public static String getPopulation(int pop){
-        StringBuilder str = new StringBuilder("");
+        StringBuilder str = new StringBuilder();
         char[] chars = String.valueOf(pop).toCharArray();
         int i = chars.length;
         for (char c: chars){
